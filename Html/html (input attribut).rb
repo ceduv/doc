@@ -33,4 +33,9 @@ input type=text list=city id=city name=city
 #           ATTRIBUT
 
 id - class - type - name - src - min - max - value
-placeholder - for(label) - target - href - ...
+placeholder - for(label) - target - href - required
+minlenghth - maxlength - pattern
+...
+#---
+ex : 
+pattern ="[a-zA-Z0-9]+"     #   =>  regex not special chars
