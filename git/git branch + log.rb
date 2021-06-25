@@ -19,3 +19,10 @@ git branch -d my_feature    #   suppr une branch
 # avertissement si oublier de merge
 git branch -D my_feature
 # pas d avertissement
+
+#---------------------------
+#           MERGE
+
+git checkout master         #   on se place ds master
+git diff master..my_feature #   voir les diff
+git merge my_feature
