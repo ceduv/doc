@@ -1,14 +1,6 @@
 #           GIT
 
 #---------------------------
-#           MERGE
-
-git checkout master         #   on se place ds master
-git diff master..my_feature #   voir les diff
-git merge my_feature
-
-
-#---------------------------
 #           PUSH
 
 git remote add origin https://github.com/ceduv/hello.git # add serv
