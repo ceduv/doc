@@ -4,11 +4,9 @@
 # utilisable en console
 <script src="script.js"></script> //ds le html
 
-#-------------------------
-#         VAR
+// => commentaire en JS
+/* */ => commentaire sur plusieurs lignes
 
-# maj
-var "firstName" = "john";
 
 #-------------------------
 #        DISPLAY
@@ -20,6 +18,21 @@ console.log(1 + 2)
 
 var fullName = first + " " + last;
 
+
+#-------------------------
+#        LENGTH
+
+console.log('Teaching the world how to code'.length) 
+# 30
+
+
+#-------------------------
+#        TRIM
+
+console.log('    Remove whitespace   '.trim());
+# Remove whitespace
+
+
 #-------------------------
 #      CONDITIONS
 
@@ -28,21 +41,23 @@ if(ver === "blabla"){
 } # else    else if
 
 #
-  &&    ||    !== (# n est pas) 
+  &&    ||    !== #(n est pas) 
 if (weather !== "sunny") # si different de
 #   ===
 if(!(weather === "sunny")) # si l inverse de l egalité
+
 
 #-------------------------
 #     PARTICULARITEES
 
 null        =>  absence de valeur
 undefined   =>  on ne sait pas si il a une valeur
-number      =>  int float -
+number      =>  int float - ( reunis )
 
 #***
 0 === ""        =>      false
 0 == ""         =>      true (== si type different essaye de convertir)
+
 
 #-------------------------
 #        OBJECT
@@ -52,6 +67,7 @@ number      =>  int float -
     "first" : "john",
      "last" : "lennon"
 }
+
 
 #-----------
 # array
@@ -63,6 +79,7 @@ students.push("test") # ajoute test au tableau students
 
 var student = "john";
 student[0] => j
+
 
 #-------------------------
 #          LOOP
@@ -83,6 +100,7 @@ while (i < students.length){
     i += 1;
 }
 
+
 #-------------------------
 #        FONCTION
 
@@ -90,6 +108,7 @@ function name(first,last){
     var full = first + " " + last
     return full;
 }
+
 
 #---------------------------
 #         DOM
