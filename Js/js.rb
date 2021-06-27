@@ -34,20 +34,6 @@ console.log('    Remove whitespace   '.trim());
 
 
 #-------------------------
-#      CONDITIONS
-
-if(ver === "blabla"){
-    console.log("ok");
-} # else    else if
-
-#
-  &&    ||    !== #(n est pas) 
-if (weather !== "sunny") # si different de
-#   ===
-if(!(weather === "sunny")) # si l inverse de l egalité
-
-
-#-------------------------
 #     PARTICULARITEES
 
 null        =>  absence de valeur
@@ -98,15 +84,6 @@ var i = 0
 while (i < students.length){
     code..
     i += 1;
-}
-
-
-#-------------------------
-#        FONCTION
-
-function name(first,last){
-    var full = first + " " + last
-    return full;
 }
 
 
