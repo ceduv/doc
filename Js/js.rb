@@ -67,24 +67,6 @@ var student = "john";
 student[0] => j
 
 
-#-------------------------
-#          LOOP
-
-#   FOR
-for (var i=0; i<students.length; i+=1){
-#       1           2               3
-#   1   condition d initialisation  - avant
-#   2   condition d arret   
-#   3   instruction                 - a la fin
-    blabla.push
-}
-#===
-#   WHILE
-var i = 0
-while (i < students.length){
-    code..
-    i += 1;
-}
 
 
 #---------------------------
