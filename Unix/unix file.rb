@@ -21,6 +21,9 @@ ls -larth   # combine un peu tt
 echo "blabla">file
 echo "blabla2">>file    # a la suite nouvelle ligne
 
+#---------TROUVER UN FICHIER----------
+
+mlocate Array.rb
 
 #---------DEPLACER RENOMMER----------
 

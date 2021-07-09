@@ -30,3 +30,9 @@ esc -> retour en  cli
 :x -> save & quit 
 
 gvim    # editeur hors shell
+
+# .nanorc ds home             pour config perso
+sudo nano /etc/nanorc/      # pour conf all users
+set mouse
+set autoindent
+set smarthome

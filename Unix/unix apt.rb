@@ -4,27 +4,17 @@
 
 #-------------- APT --------------
 
-sudo apt-cache search [mot-clé]         
-# trouver le nom d un logiciel ds library
+sudo apt-get upgrade	        # MAJ paquets installés
+                                # MAJ de sécurité.
 
-sudo apt-get install [nom du logiciel]  
-# l installer
+sudo apt-get update             # met le cache a jour
+sudo apt-cache search [keyW]    # rechercher un logiciel   
+sudo apt-get install [name]     # l installer
 
-sudo apt update		            # permet de mettre à jour la liste des paquets disponibles, commande à taper en premier
-sudo apt-get update             # avant toute installation pour être sûr d avoir les mises à jour.
-
-sudo apt upgrade	            # permet de mettre à jour les paquets déjà installés, à taper pour faire les mises à 
-                                # jour de sécurité.
-
-sudo apt install soft	        # Installe le logiciel "soft" en gérant les dépendances, donc "apt" vous 
-                                # demande peut être d installer d autres paquets en complément.
-
-sudo apt remove soft	        # désinstalle le paquet "soft".
-
-sudo apt autoremove soft	    # désinstalle "proprement" le paquet "soft" ainsi que ses dépendances.
-
+sudo apt-get install paquet1 paquet2 paquet3
+sudo apt-get remove soft	    # désinstalle le paquet "soft".
+sudo apt-get autoremove soft    # désinstalle "proprement" le paquet "soft" ainsi que ses dépendances.
 apt search supersoft	        # recherche le texte "supersoft" dans les descriptions des paquets.
-
 man apt		                    # pour avoir les options de "apt".
 
 
