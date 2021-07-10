@@ -27,6 +27,4 @@ git diff master..my_feature # voir les diff
 git merge my_feature
 
 
-
-
-test master
+test master + test 1
