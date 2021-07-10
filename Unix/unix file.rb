@@ -8,11 +8,11 @@
 
 ls
 ls nom du file 
-ls *    # cherche tout les fichier .txt
-ls -lh      # detail du fichier + human read
-ls -rtl     # classer par date de modification
-ls -a       # voir les fichiers cacher (ex: .gitignore)
-ls -larth   # combine un peu tt
+ls *                    # cherche tout les fichier .txt
+ls -lh                  # detail du fichier + human read
+ls -rtl                 # classer par date de modification
+ls -a                   # voir les fichiers cacher (ex: .gitignore)
+ls -larth               # combine un peu tt
 
 
 #---------ECRIRE DANS UN FICHIER----------
@@ -23,7 +23,13 @@ echo "blabla2">>file    # a la suite nouvelle ligne
 
 #---------TROUVER UN FICHIER----------
 
+
+sudo updatedb           # MAJ la base de donnée
+
+locate Array.rb
 mlocate Array.rb
+slocate                 # comme locate mais verifi les droits
+
 
 #---------DEPLACER RENOMMER----------
 
@@ -34,7 +40,7 @@ mv 1 2/1	=>	deplacer 1file 2fichier/1file
 
 #---------COPIER D UN FICHIER VERS UN AUTRE----------
 
-tail
+
 cat file1>file3
 cat file2>>file3
 # file 3 contient file1 + file2

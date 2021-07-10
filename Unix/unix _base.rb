@@ -1,48 +1,52 @@
 #--------------------------------
 #           UNIX
+             
 
 #-------------- BASE --------------
-	
-wsl/bash 	 	        # lancer envi LINUX
-sudo 			        # autorisation root (admin)
-pwd			            # emplacement actuel
-cd			            # revenir a Home
+
+lsb_release -a          # voir sa version Ubuntu
+
+wsl/bash 	 	# lancer envi LINUX
+sudo 			# autorisation root (admin)
+pwd			# emplacement actuel
+cd			# revenir a Home
 cd /                    # re venir a la racine
-cd 1		            # change directory 1path 
+cd 1		        # change directory 1path 
 cd ..                   # reculer d 1
 cd ../..                # reculer de 2
 /                       # se deplacer de facon absolu
-mkdir		            # creates directory
-touch		            # creates file
-.		 	            # curent directory
-..			            # parent directory
+mkdir		        # creates directory
+touch		        # creates file
+.		 	# curent directory
+..			# parent directory
 
-echo <string>		    # Imprimer la chaîne à l écran
-man <command>		    # Afficher la page de manuel
-clear ou alors ⌃L	    # Écran propre	$ clear
-exit ou alors ⌃D	    # Borne de sortie	$ exit
+echo <string>		# Imprimer la chaîne à l écran
+man <command>		# Afficher la page de manuel
+clear ou alors ⌃L	# Écran propre	$ clear
+exit ou alors ⌃D	# Borne de sortie	$ exit
 
-⌃C	                    # Sortez du pétrin
+⌃C	                # Sortez du pétrin
 history                 # liste les dernieres commandes
 ^R                      # rechercher une commande tapée
 ^L                      # effacer la console => clear
 ^D                      # exit
+
 shift+pgup              #
 shift+pgdw              #
 
 
 # deplacer le curseur
 	
-⌃A	                    # Aller au début de la ligne	
-⌃E	                    # Aller à la fin de la ligne	
-⌃U	                    # Supprimer jusqu au début de la ligne
+⌃A	                # Aller au début de la ligne	
+⌃E	                # Aller à la fin de la ligne	
+⌃U	                # Supprimer jusqu au début de la ligne
 ^K                      # suppr tout a droite du curseur
 ^W                      # suppr tout a gauche du curseur
 ^Y                      # colle suppr ^U ^K ^W
 
 
 Option-click	        # Déplacer le curseur à l emplacement cliqué	
-Flèche haut et bas	    # Faire défiler les commandes précédentes
+Flèche haut et bas	# Faire défiler les commandes précédentes
 
 
 #----------CREER UN RACCOURCI------------
@@ -58,9 +62,8 @@ ln -s /mnt/c/users/akro/desktop/ /home/akro/
 code .		#	ouvrir vscode (ds l emplacement actuel)
 
 
-
-
 #---------DOSSIERS DE LA RACINE-------------
+
 
 #   /
 bin     # contient des programmes (exécutables) susceptibles
