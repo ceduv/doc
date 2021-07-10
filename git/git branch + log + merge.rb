@@ -28,3 +28,4 @@ git merge my_feature
 
 
 test master + test 1
+test 2
