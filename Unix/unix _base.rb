@@ -62,6 +62,15 @@ ln -s /mnt/c/users/akro/desktop/ /home/akro/
 code .		#	ouvrir vscode (ds l emplacement actuel)
 
 
+#--------------NULL--------------
+
+# Le « trou noir » de Linux
+# Parfois, vous ne voulez ni voir le résultat d'une commande
+# ni le stocker dans un fichier. l'astuce consiste à rediriger
+# le résultat dans /dev/null.  
+commande_bavarde > /dev/null
+
+
 #---------DOSSIERS DE LA RACINE-------------
 
 
