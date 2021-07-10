@@ -25,3 +25,5 @@ git branch -D my_feature    # pas d avertissement
 git checkout master         # on se place ds master
 git diff master..my_feature # voir les diff
 git merge my_feature
+
+test 1
