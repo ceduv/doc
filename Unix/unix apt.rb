@@ -2,7 +2,7 @@
 #          UNIX
  
 
-#-------------- APT --------------
+#-----------APT--------------
 
 sudo apt-get upgrade	        # MAJ paquets installés
                                 # MAJ de sécurité.
