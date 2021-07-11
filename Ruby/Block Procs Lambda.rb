@@ -5,7 +5,7 @@
 
     #   - PROC
         #   proc est un saved block
-        #   DRY => DRY, Don't Repeat Yoursel => code propre
+        #   DRY => Don't Repeat Yoursel => code propre
         #   proc == objets à part entière ,pouvoirs et capacités des objets.        (!=BLOCK)
         #   les procs peuvent être appelés encore et encore sans les réécrire       (!=BLOCK)
         #   procs directement en utilisant la méthode .call                         (!=BLOCK)
