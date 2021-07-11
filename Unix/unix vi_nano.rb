@@ -36,3 +36,9 @@ sudo nano /etc/nanorc/      # pour conf all users
 set mouse
 set autoindent
 set smarthome
+
+
+#-------------- VSCODE --------------
+
+
+code .		#	ouvrir vscode (ds l emplacement actuel)

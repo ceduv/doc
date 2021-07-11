@@ -5,9 +5,10 @@
 #-------FLUX DE REDIRECTION------- 
 
 
-# | Chaîner des commandes
+# "|" 
+# Chaîner des cmd
+# ce qui sort de la cmd1 est immédiatement envoyé à la cmd2
 cmd1 | cmd2
-# ce qui sort de la commande1 est immédiatement envoyé à la commande2
 
 
 # TRIER PAR TAILLE
