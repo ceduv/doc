@@ -40,3 +40,15 @@ gimp				            # retouche
 xfce4 (kde,unity,...)
 sudo apt-get install xfce4 	    # install
 xfce4-session			        # bureau
+
+#
+net-tools                       # ifconfig
+locate                          # trouver fichier
+openssh-server                  # serveur
+links                           # navigateur console
+build-essential                 # compiler
+                                # 
+                                # 
+                                # 
+                                # 
+                                # 

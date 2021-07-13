@@ -1,8 +1,8 @@
 #--------------------------------
-#           UNIX
+#--------------UNIX--------------
              
 
-#-------------- BASE --------------
+#--------------BASE--------------
 
 lsb_release -a          # voir sa version Ubuntu
 
@@ -91,3 +91,6 @@ ln -s /mnt/c/users/akro/desktop/ /home/akro/
 commande_bavarde > /dev/null
 
 
+#-----------CHANGER PASS-----------
+
+sudo passwd root
