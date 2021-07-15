@@ -14,7 +14,7 @@ git commit -m ""
 git commit -a # a la voler ??
 
 # editer LE COMMIT
-git commit --ammend -m "blablabla"
+git commit --amend -m "blablabla"
 
 #           DIFF
 

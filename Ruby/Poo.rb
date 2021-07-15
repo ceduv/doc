@@ -1,10 +1,11 @@
+#==================================================
 #               CLASS
 
 #       instance variables      =>      @
 #       variables de classe     =>      @@
-    #   sont comme des variables d'instance, mais au lieu d'appartenir à une instance d'une classe, elles appartiennent à la classe elle-même.
+#         sont comme des variables d'instance, mais au lieu d'appartenir à une instance d'une classe, elles appartiennent à la classe elle-même.
 #       Global variables        =>      $
-    #   rendre une variable globale à partir d'une méthode ou d'une classe "$"
+#         rendre une variable globale à partir d'une méthode ou d'une classe "$"
 
 #   INITIALIZE
 class Person

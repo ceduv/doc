@@ -1,4 +1,5 @@
-#           Constante
+#==================================================
+#                   Constante
 
 #   Les constantes en ALL_CAPS et ___
 

@@ -1,6 +1,9 @@
 #==============================================
-#           YIELD (block in method)
+#                    YIELD 
+
+
 # trad => produit/recolte/rapport
+# (block in method)
 
 def block_test
     puts "We're in the method!"
