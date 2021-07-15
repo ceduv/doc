@@ -48,7 +48,3 @@ openssh-server                  # serveur
 links                           # navigateur console
 build-essential                 # compiler
                                 # 
-                                # 
-                                # 
-                                # 
-                                # 
