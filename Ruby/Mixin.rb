@@ -1,9 +1,9 @@
+#==================================================
 #                   MIXIN
 
 #   les mixin imite l'héritage de plus d'une classe :
-#   en mélangeant les traits de divers modules selon les besoins, 
-#   nous pouvons ajouter n'importe quelle combinaison de 
-#   comportements à nos classes .
+#   permet d utiliser les modules créé dans nos
+#   classe .
 
 #   INCLUDE MODULE
 #   include mélange les méthodes d'un module au niveau de l'instance
@@ -13,8 +13,9 @@ module Action
       puts "I jumped forward #{@distance} feet!"
     end
 end 
+
 class Rabbit
-    include Action
+    include Action                  # include module
     attr_reader :name
     def initialize(name)
       @name = name
@@ -27,9 +28,9 @@ class Cricket
       @name = name
     end
 end  
-peter = Rabbit.new("Peter")         #INSTANCE
+peter = Rabbit.new("Peter")         # INSTANCE
 jiminy = Cricket.new("Jiminy")  
-peter.jump                          #INSTANCE + MODULE
+peter.jump                          # INSTANCE + MODULE
 jiminy.jump
 
 #   I jumped forward 4 feet!
@@ -37,8 +38,35 @@ jiminy.jump
 
 #--------------------------------------
 
-#   EXTENDS
+#               EXTENDS
+
 #   extend mélange les méthodes d'un module au niveau de la classe.
+#   toutes les methodes d instance du premier module seront disponible
+#   en methode de classe  pour la classe extend
+#   comme si on mettais des self.(def) -> methode de classe
+
+
+module A 
+
+  def self.extended(base)             # hook ???
+    puts  "#{base.to_s} extend de a"
+  end
+  def demo
+    puts "demo"
+  end
+end
+
+class B
+  extend A      # les module d instance sont disponible ds la classe
+end             # cree les methodes au niveau de la classe
+C.demo
+# demo
+#---
+c = C.new
+c.extend(A)     # methode classe seulement pour cette instance c
+c.demo          # cree la methode pour l instace
+
+#---------------------------------------------
 
 module ThePresent
     def now
@@ -52,3 +80,4 @@ end
   
 TheHereAnd.now
 #   It's 3:50 PM (GMT).
+

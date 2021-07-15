@@ -1,7 +1,13 @@
 #================================================
 #               HERITAGE
 
+# inheritance
 # classe Ruby donnée ne peut avoir qu'une seule superclasse.
+# possibilité d ajoute des methodes
+# possibilité d ecraser des methodes de la classe parent
+
+instance.class                  # nom de la classe instancié
+instance.class.superclasse      # nom de la classe parent
 
 
 class ApplicationError
@@ -20,32 +26,40 @@ class ApplicationError
 #================================================
 #               SUPER
 
-# Lorsque vous appelez super depuis l'intérieur d'une méthode
-    #   cela indique à Ruby de rechercher 
-    #   dans la superclasse de la classe actuelle et 
-    #   de trouver une méthode portant le même nom que celle 
-    #   à partir de laquelle super est appelée. S'il le trouve
-    #   Ruby utilisera la version de la superclasse de la méthode
+# super depuis l'intérieur d'une méthode appelle
+#   appelle la methode de la superclasse portan
+#   le même nom 
 
-# Super call la methode du meme nom de la class parent
+# Super call la methode parent et retournera son resultat
 class Creature
     def initialize(name)
           @name = name
     end       
     def fight
-        return "Punch to the chops!"            #1
+        return "Punch to the chops!"            # AAA
     end
 end
 
 class Dragon < Creature
       
     def fight
-        puts "Instead of breathing fire..."     #2
-        super                                   #1
+        puts "Instead of breathing fire..."     # 2
+        super                                   # AAA apelle la methode fight de superclasse
     end
 end
-#   Instead of breathing fire...                #2
-#   Punch to the chops!                         #1
+#   Instead of breathing fire...                # 2
+#   Punch to the chops!                         # AAA
+
+
+#----------------------------------------------
+
+# possible de modifier les parametres du super
+
+class Delegue < Eleve 
+    def ajouterNote(note)
+        super (note + 1 )
+    end
+end
 
 
 #----------------------------------------------
@@ -59,7 +73,7 @@ class Message
     end 
 end
   
-my_message = Message.new("ced","alex")  #instance
+my_message = Message.new("ced","alex")  # instance
   
 class Email < Message                   # heritage
   
@@ -67,3 +81,7 @@ class Email < Message                   # heritage
         super                           # call initialize de la classe parent
     end
 end
+
+#-----------------------------------------------
+
+

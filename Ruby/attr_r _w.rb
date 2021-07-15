@@ -1,3 +1,4 @@
+#==================================================
 #           ATTR_READER ATTR_WRITER ( attr_accessor )
 
 #   attr_accessor pour rendre une variable lisible et inscriptible d'un seul coup.
