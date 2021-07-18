@@ -1,5 +1,5 @@
 #=========================
-#          JS     
+#          JS
 
 #-------------------------
 
@@ -29,7 +29,7 @@ var fullName = first + " " + last;
 #        LENGTH
 
 
-console.log('Teaching the world how to code'.length) 
+console.log('Teaching the world how to code'.length)
 # 30
 
 
@@ -58,7 +58,7 @@ number      =>  int float - ( reunis )
 #        OBJECT
 
 
-# hash / collection 
+# hash / collection
 {
     "first" : "john",
      "last" : "lennon"
@@ -66,6 +66,7 @@ number      =>  int float - ( reunis )
 
 
 #-----------
+
 
 # array
 var test = []; # cree un tab vide
@@ -90,7 +91,7 @@ REPRESENTATION MEMOIRE DU FICHIER HTML
 
 # architecture
 
-# PARENT -> ENFANT 
+# PARENT -> ENFANT
 # chaque element est un noeud
 # 1 seul parent
 

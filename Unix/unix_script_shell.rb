@@ -84,3 +84,5 @@ au autre repertoire du path
 
 # un foi fait seulement taper essai.sh pour lancer de nimporte ou
 
+# lancer un script au demarage
+# path ds .zhrc ds home
