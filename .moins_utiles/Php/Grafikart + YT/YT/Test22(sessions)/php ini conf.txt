@@ -1,0 +1,36 @@
+session.use_cookies = 1
+== stocker les sessions en tant que cookies
+   0 off    1 on
+
+session.cookie_lifetime = 0
+== stocker de maniere permanente le cookies ou non 
+   0 off    1 on
+
+session.use_only_cookies = 1
+== forcer php a maintenir les cookies pour la session
+   securite evite que quelqun injecte des identifiants de session #riencompris
+
+session.name = PHPSESSID
+== nom de session
+
+session.use_strict_mode = 1
+== empeche d utiliser une session avec identifiant non initalisé
+
+session.cookie_httponly = 1
+== evite l acces aux cookies via javascript
+
+;session.cookie_secure =
+== decommenter pour travailler en https
+
+session.use_trans_sid = 0
+== limiter le risque d injection de session
+
+session.cache_limiter = nocache
+== cache ???
+
+session.hash_function = "sha256"
+== hash ???
+
+
+
+

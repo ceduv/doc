@@ -1,0 +1,124 @@
+=============== TABLE ===============
+=====================================
+
+Nom de la table && elements associés
+
+!!! JAMAIS D ESPACE DS LE NOM DES CHAMPS "_____"
+
+
+============ MOTEUR DE S ============
+=====================================
+
+-MyIsam
+	plus rapide
+	recherche full text (+de place mais recherche plus pertinante)
+	recherche par priorite
+	n accepte pas les cle etrangeres
+
+-InnoDb
+	plus lents
+	en cas de crash permet de recup les donnes
+
+
+================ TYPE ===============
+=====================================
+
+-Text / Numeric / Float ...
+	 par taille en octet
+
+-Date
+	datetime
+	timestamp (attribut particulier
+		   ex: mise a jour de date chaque X)
+	
+-Enum
+	permet d attribuer des valeur aux champs
+
+
+================= ID ================
+=====================================
+
+-index PRIMARY + AI
+-l index permet d ameliorer les recherches
+	au detriment de la taille
+  DONC ne pas mettre d index si trop de valeur different sur ce champ
+	ou en fonction de nos requetes
+
+ ex: si on cree un index pour le sexe on divise notre champ de recherche
+	mais on a cree un nouvel index homme//femme
+
+
+=============== TAILLE ==============
+=====================================
+
+-Combien de caractere accept
+
+
+============== DEFAUT ===============
+=====================================
+
+-Attribuer une valeur par defaut
+	ex: null
+		tel que defini (dans le champs assoscié)
+		CURRENT TIME STAMP date du jour
+
+
+============= ATTRIBUTS =============
+=====================================
+
+-Unsigned	
+	pas de valeur negative 
+	ex: age
+
+-Unsigned Zerofill	
+	pas de valeur negative et ajoute des 0 pour completer la taille
+	ex: val=3   1 -> 001
+
+-on update
+	des que le champs est modifié ce met a la date actuelle
+
+
+================ NULL ===============
+=====================================
+
+-Accepte des valeurs NULL 
+
+
+=============== INDEX ===============
+=====================================
+
+
+================ A.I ================
+=====================================
+
+-AUTO INCREMENTE
+
+=============== SQL =================
+=====================================
+
+USE formationsql;
+CREATE TABLE nom_de_la_table
+	(
+	nom VARCHAR(255) NOT NULL,
+	prenom VARCHAR(225) NOT NULL,
+	sexe VARCHAR(1) NOT NULL,
+	date_naissance DATE NOT NULL
+	)
+ENGINE=INNODB DEFAULT CHARSET=utf8
+
+////
+
+USE formationsql;
+SHOW CREATE TABLE nom_de_la_table;
+
+	// va ressortir le code de la table utilisateur,
+	// permet de reutiliser ou de transposer
+	// afficher texte complet
+DROP
+	// pour supprimer
+
+ALTER
+	// modifier la table
+
+CHANGE
+	// modifier un champ

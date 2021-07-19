@@ -1,0 +1,102 @@
+============== ERRORS ==================
+
+dev
+
+error_reporting = E_ALL
+	show all errors, warnings and notices including coding standards.
+
+
+display_errors = On
+	This directive controls whether or not and where PHP will output errors,
+	notices and warnings too.
+
+
+============== EXTENSIONS ==================
+
+
+extension_dir ="c:/wamp64/bin/php/php7.4.9/ext/"
+	Dans quel fichier va t on lancer les extensions
+
+
+	; Dynamic Extensions ;
+
+extension=bz2
+extension=curl
+;extension=dba
+;extension=com_dotnet
+;extension=enchant
+;extension=ffi
+extension=fileinfo
+;extension=ftp
+extension=gd2
+extension=gettext
+extension=gmp
+extension=intl
+extension=imap
+extension=ldap
+extension=mbstring
+extension=exif      ; Must be after mbstring as it depends on it
+extension=mysqli
+;extension=oci8_12c  ; Use with Oracle Database 12c Instant Client
+;extension=odbc
+extension=openssl
+;extension=pdo_firebird
+extension=pdo_mysql
+;extension=pdo_oci
+;extension=pdo_odbc
+;extension=pdo_pgsql
+extension=pdo_sqlite
+;extension=pgsql
+;extension=phpdbg_webhelper
+;extension=shmop
+
+
+============== SESSIONS =================
+
+session.use_cookies = 1
+	== stocker les sessions en tant que cookies
+   0 off    1 on
+
+
+session.cookie_lifetime = 0
+	== stocker de maniere permanente le cookies ou non 
+   0 off    1 on
+
+
+session.use_only_cookies = 1
+	== forcer php a maintenir les cookies pour la session
+   	securite evite que quelqun injecte des identifiants de session #riencompris
+
+
+session.name = PHPSESSID
+	== nom de session
+
+
+session.use_strict_mode = 1
+	== empeche d utiliser une session avec identifiant non initalisé
+
+
+session.cookie_httponly = 1
+	== evite l acces aux cookies via javascript
+
+
+;session.cookie_secure =
+	== decommenter pour travailler en https
+
+
+session.use_trans_sid = 0
+	== limiter le risque d injection de session
+
+
+session.cache_limiter = nocache
+	== cache ???
+
+
+session.hash_function = "sha256"
+	== hash 
+
+
+
+
+
+

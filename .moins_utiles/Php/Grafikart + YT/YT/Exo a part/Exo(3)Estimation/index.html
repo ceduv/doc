@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>exo php</title>
+</head>
+<body>
+<h1>Oeuvre d arts</h1>
+<p>bienvenue sur ce site, bla bla bla.</p>
+<form method="POST" action="Estimation.php">
+    <input type="text" placeholder="nom de l oeuvre" name="nom" id="nom" required>
+    <select  name="type" id="type" required >
+        <option value="5"selected="selected">Dessin</option>
+        <option value="27">Sculpture</option>
+        <option value="35">Peinture</option>
+        <option value="1205">Document</option>
+        <option value="0">Autres</option>
+    </select>
+    <select  name="annee" id="annee" required >
+        <option value="100000"selected="selected">Avant 1200</option>
+        <option value="76000">Entre 1201 et 1600</option>
+        <option value="32000" >Entre 1601 et 1800</option>
+        <option value="15000">Entre 1801 et 1999</option>
+        <option value="0">Autre</option>
+    </select>
+    <input type="submit" value="Lancer l'estimation !">
+</form>
+</body>
+</html>

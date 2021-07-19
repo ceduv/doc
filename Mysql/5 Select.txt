@@ -1,0 +1,77 @@
+================= SELECT =====================
+
+SELECT champs,champs,champs FROM [table] WHERE [conditions]
+
+!!! - SANS conditions , il recupere tout les chamsp de la table
+    limit par phpmyadmin
+    - on peut aussi fixé une limit
+
+
+================= LIMIT =====================
+
+SELECT nom,prenom FROM utilisateurs LIMIT 0 , 2   
+                                    (0 = point de depart)
+                                    (2 = nombres de lignes)
+    ( PAGINATION ??? )
+
+
+================= SELECT ALL ===================
+
+SELECT * FROM utilisateurs
+
+" * " -> tout les champs
+    !!! influence en performance
+
+
+================= ORDER BY ===================
+
+SELECT * FROM utilisateurs ORDER BY nom [option ->asc/desc]
+
+    -> dans tous les champs de utlisateurs range nom par ordre croissant
+
+asc -> croissant
+desc -> decroissant
+
+
+---- PLUSIEURS conditions
+
+ SELECT * FROM utilisateurs ORDER BY nom DESC  , id DESC
+
+
+================= COUNT ===================
+
+SELECT COUNT(*) FROM utilisateurs
+
+SELECT COUNT as population (*) FROM utilisateurs
+    -> permet de renomer un champs
+    -> plus clair en php de recup population que count(*)
+
+SELECT COUNT(*) as nombres ,sexe as population
+FROM utilisateurs GROUP BY sexe
+
+    ->  -COUNT(*)  compte tout les champs
+        les mets dans un nouveau champs nombres
+        -GROUP BY sexe conditions de comptage
+
+COUNT (id) (nom) ...
+       !!!   si un champs est NULL ne le compte pas
+
+
+================= MIN/MAXAVG ===================
+
+SELECT MIN (birthday) as population FROM utilisateurs
+    -> revoi la personne la plus vieille de utilisateurs
+
+SELECT MIN (birthday) as population FROM utilisateurs GROUP BY sexe
+    -> renvoi l homme et la femme ....
+
+AVG -> moyenne outils statistique
+
+
+
+
+
+
+
+
+

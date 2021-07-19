@@ -1,0 +1,28 @@
+<?php
+// la constance s apellera juste avec CRENEAUX ( pas de  $)
+
+define('JOURS', [
+    'Lundi',
+    'Mardi',
+    'Mercredi',
+    'Jeudi',
+    'Vendredi',
+    'Samedi',
+    'Dimanche'
+]);
+
+define('CRENEAUX', [[
+    [8, 12],
+    [14, 19]
+], [
+    [8, 12],
+    [14, 19]
+], [
+    [8, 12]
+], [
+    [8, 12],
+    [14, 19]
+], [
+    [8, 12],
+    [14, 19]
+], [], []]);

@@ -1,0 +1,7 @@
+Recup l'adresse de php
+C:\wamp64\bin\php\php7.4.9
+
+chercher les variables dans l environnement de windows
+variable d environnement/Path/Nouvelle/C:\wamp64\bin\php\php7.4.9
+
+
