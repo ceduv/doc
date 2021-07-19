@@ -73,9 +73,10 @@ http://localhost:3000/rails/info/routes
 
 #           VS CODE
 
-# CONF HTML TO ERB
+# autosuggestion html to erb
 
 # Enabling Emmet:
 # Go to your settings File>Preferences>Settings
 # in json file
-"emmet.includeLanguages": { "html.erb":"html" }
+include language html->erb erb->html
+"emmet.includeLanguages": { "erb": "html", "ruby": "html"}

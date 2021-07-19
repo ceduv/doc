@@ -52,3 +52,20 @@ drop database tuto;
 #   QUITTER
 
 quit
+
+
+
+#----------------------------------
+#        PB START RAILS DB
+
+# MYSQL ACCESS DENIED 
+STOP SERVER 
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'test';
+flush privileges;
+exit
+START SERVER
+# SI PB 
+su: warning: cannot change directory to /nonexistent:
+sudo service mysql stop
+sudo usermod -d /var/lib/mysql/ mysql
+sudo service mysql start
