@@ -1,0 +1,51 @@
+===================== insert ========================
+
+
+simple :
+
+INSERT INTO [table] (champs1,champs2,champs3) VALUES (valeur1,valeur2,valeur3)
+
+
+Pour id/nom/prenom/sexe/date/ville
+
+INSERT INTO nom_de_la_table
+VALUES (NULL,"duv","cedric","h","1987/11/15","montreuil")
+
+Null -> pour l auto incrementation
+
+Date -> "Y/m/d H:i:s"
+
+" " guillemet² -> string
+pas de guillemet -> Int Double FLoat
+\"  echapper si besoin
+
+; entre chaque requete
+
+
+================ Insertion Multiples =================
+
+INSERT INTO [table] (champ1,champ2)
+    VALUES  (valeur1,valeur2),
+            (valeur1,valeur2),
+            (valeur1,valeur2)
+
+
+INSERT INTO nom_de_la_table
+VALUES (NULL,"duv2","cedric2","h","1987/11/15","montreuil"),
+(NULL,"duv3","cedric3","h","1987/11/15","montreuil");
+
+
+===================== insert champs ====================
+
+
+INSERT INTO nom_de_la_table (nom,prenom)
+VALUES ('DOE','John')
+
+
+======================= 2eme methode ====================
+
+
+INSERT INTO nom_de_la_table SET nom="Doe", prenom="John28";
+INSERT INTO nom_de_la_table SET nom="Doe", prenom="John29"
+
+

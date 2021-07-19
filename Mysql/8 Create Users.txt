@@ -1,0 +1,62 @@
+Before you Begin 
+
+All commands are executed inside the MySQL shell as root or administrative user.
+ The minimum privileges required to create user accounts and define their privileges 
+is CREATE USER and GRANT.
+To access the MySQL shell type the following command and enter your MySQL root 
+user password when prompted:
+
+mysql -u root -p
+
+sudo mysql
+//////////////////////////////////////
+
+
+To create a new MySQL user account, run the following command:
+
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'user_password';
+
+=====================================
+
+To create a user that can connect from any host, use the '%' wildcard as a host part:
+
+CREATE USER 'newuser'@'%' IDENTIFIED BY 'user_password';
+
+
+
+//////////////////////////////////////
+
+
+Grand all privileges to a user account over a specific database:
+
+GRANT ALL PRIVILEGES ON database_name.* TO 'database_user'@'localhost';
+
+
+Grand all privileges to a user account on all databases:
+
+GRANT ALL PRIVILEGES ON *.* TO 'database_user'@'localhost';
+
+
+//////////////////////////////////////
+
+
+Display MySQL User Account Privileges
+To find the privilege(s) granted to a specific MySQL user account, use the SHOW GRANTS statement:
+
+SHOW GRANTS FOR 'database_user'@'localhost';
+
+
+//////////////////////////////////////
+
+
+Revoke Privileges from a MySQL User Account 
+
+REVOKE ALL PRIVILEGES ON database_name.* FROM 'database_user'@'localhost';
+
+
+//////////////////////////////////////
+
+
+Remove an Existing MySQL User Account
+
+DROP USER 'user'@'localhost'

@@ -1,0 +1,32 @@
+- 3 champs NOM MESS BUTTON
+- PAS DE PSEUDO DE -de 3c && MESSAGES -de 10c
+
+-on crera un fichier "messages"  1 mess/l
+
+- json_encode(tableau) et json_decode(tableau,true)
+- encode et decode tableau
+
+-Format messages
+<p>
+    <strong>PSEUDO</strong> <em> le 03/12/2020 à 12h00 </em><br>
+    Le messages
+</p>
+
+saut de lignes a conserver nl2br
+
+## RESTRICTION
+
+2 class
+
+objet message 
+    - new message (string $username , strong $ message, date time $date)
+    -isvalid() : bool
+    -getErrors() : array
+    -toHTML() : string
+    -toJSON() : string
+    -message :: fromjson(string): message
+
+objet livre d or
+    - new guestbook($fighier)
+    - addmessage(message $message)
+    -getMessages() : array

@@ -1,0 +1,30 @@
+=============	My SQL	 =============
+
+par defaut
+Log:root
+mdp:
+
+======================================
+
+Tout ce qui est utilisé par l interface peut etre 
+rentré sous forme de requete.
+
+CONVENTION: 
+les parties FIXES en MAJ
+les parties VARIABLES en MIN
+
+ex: 
+
+create DATABASE test1			// creation + nom
+DEFAULT CHARACTER SET utf8		// Encodage
+DEFAULT COLLATE utf8_general_ci		// Interclassement
+
+DROP DATABASE test1			// supression
+
+show VARIABLES				////les variables correspondant a la base
+
+============ Base de donne ============
+
+
+ci = case insensitive
+Maj == Min

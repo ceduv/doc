@@ -1,0 +1,40 @@
+===================== Delete ========================
+
+
+!!! IRREVERSIBLE,
+    ATTENTION AUX COMMANDES
+    DELETE supprimes les ENRG pas les infos
+
+DELETE FROM [table] WHERE [conditions] LIMIT 1;
+
+LIMIT + nbe de lignes a sup ->
+     securité pour ne faire que sur une ligne ou plus
+
+
+=================== CLE PRIMAIRE =================
+
+
+DELETE FROM table WHERE id=4 LIMIT 1;
+
+Passer par l id pour eviter les supressions d autres contenus
+
+
+===================== ID AUTO I ====================
+
+
+L A.I ne remplacera pas une id suppr, il continu a la suite.
+
+!!! si on VIDE une TABLE , l id ne REPARS PAS a 0
+
+
+======================= reset table ====================
+
+
+TRUNCATE TABLE nom_de_la_table
+
+!=DELETE  TRUNCATE SUPPR LES INFOS DE LA TABLE
+
+
+
+
+

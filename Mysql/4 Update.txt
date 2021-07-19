@@ -1,0 +1,44 @@
+===================== Update ========================
+
+
+!!! IRREVERSIBLE
+
+
+UPDATE [table] SET champ=valeur,champ=valeur WHERE [conditions]
+
+ex:
+
+UPDATE utilisateurs SET birthday="1980-03-04",
+ville="Perpignan" WHERE id=4
+
+
+=================== Update par type =================
+
+
+UPDATE utilisateurs SET ville="Montpellier" WHERE sexe="h"
+
+ON RECHERCHE ICI PAR SEXE ET ON VA SET MONTEPELLIER
+DANS TOUT LES CHAMPS DE SEXE H
+
+!!!
+
+UPDATE utilisateurs SET prenom=nom WHERE sexe="h"
+
+VA MODIFIER TOUT LES CHAMPS NOM AVEC LE PRENOM CAR PAS DE ""
+SI "" ON AURAIT ATTRIBUER LA STRING "nom" a tout les prenoms des h
+
+
+===================== CONDITIONS ====================
+
+
+UPDATE utilisateurs SET age=5+3 WHERE sexe="h"
+
+Possibilite operation arithmetique dans le set
+
+
+
+
+
+
+
+

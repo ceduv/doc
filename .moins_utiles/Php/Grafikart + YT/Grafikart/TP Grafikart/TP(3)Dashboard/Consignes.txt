@@ -1,0 +1,23 @@
+nouvelle page dash board
+
+1 - nombre de visite globale
+
+2 - side bar avec les 5 dernieres annees
+
+3 - quand on clik sur une annee ca ns affiche une sous liste avec les mois correspondant a l annne
+
+4 - quand on click sur le moi le nombre de visite cumulé durant le moi
+
+utiliser la fonction globale
+
+// globale verifie le nom du fichier par pattern *****.txt 2021-**-*******
+
+====================================
+
+login + mdp pour acceder au dashboard
+
+1 - creer page avec case log + mdp + sub
+
+2 - condition  en dur //  ****===admin && ***===mdp ? sucess : denied ;
+
+3 - denied = message d erreur sur meme page class=alert alert-danger 

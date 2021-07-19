@@ -1,0 +1,81 @@
+================== DATE ======================
+
+
+=============== FUNCTIONS =====================
+
+
+NOW     ->  recupere le timestamp actuel y-m-d h-m-s
+
+CURDATE ->  que la date
+
+CURTIME -> l heure
+
+FROM_DAYS -> convertit les jour en annee date moi
+
+DATE    -> pratique pr convertir un datetime en date
+
+DATE_FORMAT -> CF DOC
+
+
+================= ADD/SUBDATE ====================
+
+
+SELECT *, ADDDATE(birthday , INTERVAL 1 WEEK) //[hour year ...]
+FROM 'utilisateurs' WHERE 1
+
+    -> On cree ADDDATE et on ajoute 1w
+    -> SUBDATE =! ADDDATE
+
+
+=================  ADD/SUBTIME  =====================
+
+
+SELECT *, ADDTIME(birthday , '1:0:0') 
+FROM 'utilisateurs' WHERE 1
+
+    -> ajoute du temps h/m/s
+    -> (birthday , '1 1:0:0')  1j 1h/0m/s
+    -> SUBTIME =! ADDTIME
+
+
+===================== CONDITIONS =====================
+
+
+//      - DATE DU JOUR - 16 ANS
+
+SELECT * FROM utilisateurs WHERE 
+birthday < SUBDATE ('2021-05-25' INTERVAL 16 YEAR)
+
+    ->  SELECT *            ->  recherche ds TOUS les champs
+
+    ->  FROM utilisateurs   ->  dans la TABLE
+
+    ->  WHERE birthday      ->  CHAMPS de recherche
+
+    ->  < SUBDATE ('2021-05-25' INTERVAL 16 YEAR)
+
+                            -> pour la date du jour a laquelle on retir 16 ans
+
+                        
+//      - AGE DES USER DE LA BASE DE DONNNE
+
+SELECT *, DATEDIFF(CURDATE(),birthday) FROM utilisateurs
+
+    ->DATEDIFF(CURDATE(),birthday)
+                            -> diff entre date courante et date ds birthday
+
+
+//      - DECOMPTE PAR MOI ANNEE
+
+SELECT 
+    COUNT (*),
+    DATE (birthday)
+FROM utilisateurs
+GROUP by 
+    YEAR (birthday),
+    MONTH (birthday)
+
+
+
+
+

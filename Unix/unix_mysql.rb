@@ -6,7 +6,7 @@
 
 UPDATE + UPGRADE
 
-sudo apt-get install myslq-sever mysql-client libmysqlclient-dev
+sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 
 #   LANCER LE SERVEUR
 
@@ -24,10 +24,30 @@ sudo mysql -u root
 
 show databases;
 
+#   SE PLACER SUR UNE DB
+
+use tuto;
+
+#   VOIR TABLES
+
+show tables;
+
+#   AFFICHER LES CHAMPS
+
+describe posts;
+
+#   INSERER DU CONTENU
+
+INSERT INTO posts SET name="Un titre d article", content="un tres tres longarticle", created_at="21-07-19",updated_at="21-07-19";
+
+#   AFFICHER CONTENU
+
+SELECT * FROM posts WHERE id ;
+
 #   CREER / SUPPR DB
 
-create database name;
-drop database name;
+create database tuto;
+drop database tuto;
 
 #   QUITTER
 

@@ -1,0 +1,169 @@
+                        RECUP DES COMMANDES
+-----------------------------------------------------------------------------
+
+
+// get-command => retourne l intergralité des commandes
+     commande = <verbe>-<nom>            ex :  new-item || get-service
+             //<verb>-<noun>
+
+
+
+// get-command -verb new
+    ressort toutes les commandes & fonctions contenant le verb new
+
+// get-command -noun service
+    idem pour le nom
+
+
+
+// get-command -name *service*
+    ressort des resultats avec functions appliccations commmandes ...
+
+
+// get-command -name *service* -commandtype cmdlet
+    ressort des resultat en fonction du coms que en commandes !!!
+
+// get-command -module activedirectory
+    commande propre a un module
+
+
+                           HELP FONCTIONNEMENT
+-----------------------------------------------------------------------------
+
+
+// get-help start-service
+    aide en locale
+    nom & synthaxe & description 
+
+// get-help start-service -examples
+    exemple d utilisation
+
+// get-help start-service -full
+    reuni les 2 precedents
+
+// help start-service -full | out-gridview
+    aide en support exterieur
+
+// get-help start-service -online    PRIO  PLUS LISIBLE
+    meme chose mais ds le navigateur web
+
+
+                                GET MEMBER
+-----------------------------------------------------------------------------
+
+
+// <commande source> | get-member
+// get-service | gm
+    renvoi le smethodes et proprietes du name demandé
+
+
+                            PROCESS EN COURS
+-----------------------------------------------------------------------------
+
+
+// get-process
+    processus nom consomation
+
+// get-process -includeusername
+
+                            
+                        MANIP DE FICHIER || DOSSIER
+-----------------------------------------------------------------------------
+
+
+// test-path -path "c:\temp"
+    test si l emplacemente existe   true||false
+
+// get-content -path "chemin.txt"
+    recupere les donnes d un fichier
+
+// get content "c:\bla\bla.txt" -totalcount 5
+    lit les 5 premieres lignes d un fichier
+
+// get content "c:\bla\bla.txt" -tail 5
+    lit les 5 dernieres lignes d un fichier
+
+// get-childitem -path "c:\bla\"             GETCHIDITEM =  GCI
+    liste le contenue d un dossier et des sous dossiers
+
+// get-childitem -path "c:\bla\" -filter "*.pdf"                    || -include *.exe,*.pdf         || -exclude             
+    cherche ds le contenu d un dossier une extension de fichier     || plusieurs extensions         ||  exclu   
+    
+// get-item *
+    infos du repertoire
+
+// get-item "c:\bla\index.php"
+    infos precise sur le fichier  en -path
+
+// new-item -path "c:\bla\" -name "powershell" -itemtype directory
+                                                type de crea directory pour fichier || file ...
+
+// new-item -path . -name "powershell.php" -itemtype file                                                
+                . = fichier courant
+
+// remove-item .\powershell.php
+    supprime le fichier cree au dessus
+
+// remove-item "c:\dev\php" -recurse -force
+    supprime le dossier en path
+
+
+                        EMPLACEMENT DU POWERSHELL
+-----------------------------------------------------------------------------
+
+
+// set-location "path
+    chage l emplacement du power shell
+    ex : ps c:\ set-location "c:\dev\php"
+         ps c:\dev\php
+
+        get-childitem va affichier les elements du nouveaux dossiers courants c:\dev\php
+
+// set-location .. 
+    permet de remonter d un cran ds le dossier courant
+    ex ps c:\dev\php set-location..
+       ps c:\dev 
+
+
+
+                                  DATE
+-----------------------------------------------------------------------------
+
+// get-date
+    date de la machine en locale
+
+// get-date -format "yyyyMMdd"
+    20211115
+
+// get-date -format "dd/MM/yyyy"
+  15/11/2021
+
+
+                                 TOOLS
+-----------------------------------------------------------------------------
+
+// cls
+    reset le terminal
+
+    
+                            CONNECTIONS
+-----------------------------------------------------------------------------
+
+// test-connection ip     ex : test-connection 1.1.1.1
+// ping ip
+    teste la communication avec un autre appareil distant
+    // test-connection 1.1.1.1 -count 1
+        1 seul ping
+    // test-connection 1.1.1.1, www.google.fr -count1
+        1 seul ping a 2 destinataires
+
+// test-connection www.google.fr -traceroute
+    itineraire reseau entre moi et le destinataire
+
+// test-netconnection
+    plus d infos dont les ports
+
+
+
+
+
