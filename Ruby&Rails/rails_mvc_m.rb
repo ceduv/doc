@@ -7,6 +7,12 @@
 #------------------------------------
 #              MODELS
 
+# Un modèle est une classe Ruby utilisée
+# pour représenter des données. les modèles
+# peuvent interagir avec la base de données
+# de l'application via une fonctionnalité
+# de Rails appelée Active Record
+
 
 LA CLASS CORRESPONDANT AU MODELS SE SITUE :
 app/models
