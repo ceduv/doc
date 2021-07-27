@@ -64,6 +64,13 @@ rails s - b 0.0.0.0     # lancer server
 localhost:3000
 
 
+#           DEFAIRE UN RAILS G
+
+rails g scaffold User username:string bio:text
+#pour defaire
+rails d scaffold User username:string bio:text
+
+
 #-------------------------------------------------
 
 # voir les routes
