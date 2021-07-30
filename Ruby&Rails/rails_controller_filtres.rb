@@ -2,7 +2,7 @@
 #           RUBY & RAILS
 
 #------------------------------------
-#        CONTROLLERS FILTRES
+#             FILTRES
 
 # LES FILTRES PERMETTENT D EFECTUER DES
 # OPERATIONS AVANT OU APRES CHAQUE ACTION;
