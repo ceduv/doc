@@ -1,6 +1,9 @@
 #=========================
 #         SUM RANGE
 
+# aditionner les nombres d une range
+# en excluant le dernier
+
 def get_sum(a,b)
     if b > a
         sum = (a..b).sum
