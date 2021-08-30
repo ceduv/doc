@@ -1,6 +1,9 @@
 #=====================================
 #           WORDS REVERSE
 
+# si un mot de la phrase fait plus de 5 carac
+# le reverse
+
 saisie = "Yo fellow warriors"
 
 
@@ -19,7 +22,7 @@ returnWords(saisie)
 def spinWords(string)
     string.gsub(/\w{5,}/, &:reverse)
 end
-  
+
 #===
 
 def spinWords(string)
