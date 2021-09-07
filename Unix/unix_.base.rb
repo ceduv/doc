@@ -20,6 +20,8 @@ mkdir		            # creates directory
 touch		            # creates file
 .		 	            # curent directory
 ..			            # parent directory
+explorer.exe            # ouvre acces rapide
+wslview .               # ouvre le dossier
 
 echo <string>		    # Imprimer la chaîne à l écran
 man <command>		    # Afficher la page de manuel
