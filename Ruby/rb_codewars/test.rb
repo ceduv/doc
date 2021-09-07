@@ -1,13 +1,16 @@
-string = "abcdefg_"
+tab = [2,4,7,8,10]
 
-def solution(str)
-    str.scan(/.{1,2}/).each do |x|
-        if x.length.even?
-            puts x
-        else
-            puts x+"_"
+def iq_test(numbers)
+    rep = 0 
+        numbers.chars.map do |x|
+            if x.to_i.odd?
+                rep += 1
+                return rep
+                break
+            else
+                rep += 1
+            end
         end
-    end
 end
 
-solution(string)
+iq_test(tab)
