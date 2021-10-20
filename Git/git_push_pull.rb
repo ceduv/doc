@@ -17,4 +17,4 @@ git push origin master  #   push sur github
 git pull origin master
 
 git fetch #rapatrier une branch sans faire les merge
-#util pour bosser sur la branch de quelqun d autre
+# util pour bosser sur la branch de quelqun d autre
